@@ -13,3 +13,16 @@ for i in range(0,len(val)):
     print(val[i],end=" ")
 
 print("\n")
+
+# To find the Typecode of the array
+
+print(val.typecode)
+
+print("\n")
+
+# To reverse the array and print the elements
+
+val.reverse()
+
+for i in range(0,len(val)):
+    print(val[i], end=" ")
