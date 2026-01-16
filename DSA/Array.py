@@ -47,3 +47,12 @@ copy_arr = array(val.typecode,[x for x  in val])
 
 for i in range(0,len(copy_arr)):
     print(copy_arr[i],end=" ")
+
+
+print("\n")
+# To delete the element from array
+
+copy_arr.pop(3) # Here mention the index position
+
+for i in range(0,len(copy_arr)):
+    print(copy_arr[i],end=" ")
