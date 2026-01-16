@@ -1,4 +1,4 @@
-from array import *
+from array import * # imports all the modules inside array package
 
 val = array("i",[1,2,3,4,5,6])
 
@@ -26,3 +26,16 @@ val.reverse()
 
 for i in range(0,len(val)):
     print(val[i], end=" ")
+
+print("\n")
+
+# Insertion of element
+
+val.insert(1,50) #inserts the element at a 1st index position
+
+val.append(100) # inserts the element at the end of the array
+
+val[2] = 200 # overide the value at 2nd index position
+
+for i in range(0,len(val)):
+    print(val[i],end=" ")
