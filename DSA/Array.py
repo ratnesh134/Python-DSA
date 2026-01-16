@@ -39,3 +39,11 @@ val[2] = 200 # overide the value at 2nd index position
 
 for i in range(0,len(val)):
     print(val[i],end=" ")
+
+print("\n")
+# To copy array to another variable
+
+copy_arr = array(val.typecode,[x for x  in val])
+
+for i in range(0,len(copy_arr)):
+    print(copy_arr[i],end=" ")
