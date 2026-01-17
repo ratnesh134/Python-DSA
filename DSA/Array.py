@@ -53,6 +53,22 @@ print("\n")
 # To delete the element from array
 
 copy_arr.pop(3) # Here mention the index position
+# if index is not given then last element gets deleted
+
+copy_arr.remove(100) # if we want to remove a particular value from the array
+
 
 for i in range(0,len(copy_arr)):
     print(copy_arr[i],end=" ")
+
+print("\n")
+
+# Slicing
+
+arr = array("i",[1,2,3,4,5,6,7])
+
+a = arr[2:5]  # arr[start_index : end_index]
+
+for i in range(0,len(a)):
+
+    print(a[i], end=" ")
