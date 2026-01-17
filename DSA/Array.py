@@ -72,3 +72,17 @@ a = arr[2:5]  # arr[start_index : end_index]
 for i in range(0,len(a)):
 
     print(a[i], end=" ")
+
+print("\n")
+
+# Dynamic Input from User
+
+arr = array("i",[])
+
+n = int(input("Enter a number : "))
+print("\n")
+for i in range(0,n):
+    arr.append(int(input("Enter next input")))
+
+for x in arr:
+    print(x, end=" ")
