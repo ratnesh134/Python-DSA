@@ -86,3 +86,6 @@ for i in range(0,n):
 
 for x in arr:
     print(x, end=" ")
+
+print("\n")
+
