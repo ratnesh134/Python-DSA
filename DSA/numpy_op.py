@@ -24,3 +24,13 @@ for x in val:
     print(x)
 
 print("\n")
+
+# full
+
+val = np.full(10,5) # full(size of array, value)
+
+for x in val:
+    print(x, end=" ")
+
+print("\n")
+
