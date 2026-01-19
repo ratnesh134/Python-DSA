@@ -34,3 +34,22 @@ for x in val:
 
 print("\n")
 
+# Multi-Dimensional Array
+
+zero = np.array(10)
+
+print(zero)
+
+one = np.array([1,2,3,4])
+
+print(one)
+
+two = np.array([[1,2,3],[5,6,7]])
+
+print(two)
+
+three = np.array([[[1,2,3],[4,5,6],[7,8,9]],[[11,12,13],[14,15,16],[17,18,19]]])
+
+print(three)
+
+print(three.shape)
