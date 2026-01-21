@@ -26,7 +26,12 @@ class SinglyLinkedList:
         # When the Linked List is not created
         else:
             self.head = temp
-        
+
+    def insertAtBeg(self,value):
+        temp = Node(value) # Creates a node
+        temp.next = self.head
+        self.head = temp
+
     
     # Printing the Linked List
 
@@ -42,4 +47,5 @@ obj = SinglyLinkedList()
 obj.insertAtEnd(10)
 obj.insertAtEnd(20)
 obj.insertAtEnd(30)
+obj.insertAtBeg(50)
 obj.printLL()
