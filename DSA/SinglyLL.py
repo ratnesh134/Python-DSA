@@ -27,4 +27,12 @@ class SinglyLinkedList:
         else:
             self.head = temp
         
+    
+    # Printing the Linked List
 
+    def printLL(self):
+
+        t1 = self.head
+        while (t1.next != None):
+            print(t1.data)
+            t1 = t1.next
