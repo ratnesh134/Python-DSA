@@ -32,6 +32,17 @@ class SinglyLinkedList:
         temp.next = self.head
         self.head = temp
 
+    def insertionAtMid(self,value,x): # x is the value after which "value" will be added
+        temp = Node(value)
+        t1 = self.head
+
+        while (t1.next != None):
+            if (t1.data == x):
+                temp.next = t1.next
+                t1.next = temp
+            t1 = t1.next
+            
+
     
     # Printing the Linked List
 
@@ -48,4 +59,5 @@ obj.insertAtEnd(10)
 obj.insertAtEnd(20)
 obj.insertAtEnd(30)
 obj.insertAtBeg(50)
+obj.insertionAtMid(60,20)
 obj.printLL()
