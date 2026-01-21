@@ -41,7 +41,24 @@ class SinglyLinkedList:
                 temp.next = t1.next
                 t1.next = temp
             t1 = t1.next
-            
+
+    # Deleting the linked list
+    def deleteLinkedList(self,value):
+
+        t1 = self.head
+        prev = self.head
+
+        while (t1.next != None):
+
+            if(t1.data == value):
+                prev.next = t1.next
+                break
+
+            else:
+                prev = t1
+                t1 = t1.next
+
+
 
     
     # Printing the Linked List
@@ -60,4 +77,5 @@ obj.insertAtEnd(20)
 obj.insertAtEnd(30)
 obj.insertAtBeg(50)
 obj.insertionAtMid(60,20)
+obj.deleteLinkedList(60)
 obj.printLL()
