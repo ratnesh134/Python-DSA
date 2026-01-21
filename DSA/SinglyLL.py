@@ -52,6 +52,7 @@ class SinglyLinkedList:
         if(self.head == value):
             self.head = t1.next
 
+        # If element we want to delete is in the middle
         while (t1.next != None):
 
             if(t1.data == value):
