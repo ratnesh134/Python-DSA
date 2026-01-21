@@ -48,6 +48,10 @@ class SinglyLinkedList:
         t1 = self.head
         prev = self.head
 
+        # If element we want to delete is at the start
+        if(self.head == value):
+            self.head = t1.next
+
         while (t1.next != None):
 
             if(t1.data == value):
@@ -58,6 +62,9 @@ class SinglyLinkedList:
                 prev = t1
                 t1 = t1.next
 
+        # If we want to delete element at the end
+        if (t1.data == value):
+            prev.next = None
 
 
     
