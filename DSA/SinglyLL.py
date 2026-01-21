@@ -49,7 +49,7 @@ class SinglyLinkedList:
         prev = self.head
 
         # If element we want to delete is at the start
-        if(self.head == value):
+        if(t1.data == value):
             self.head = t1.next
 
         # If element we want to delete is in the middle
@@ -85,5 +85,5 @@ obj.insertAtEnd(20)
 obj.insertAtEnd(30)
 obj.insertAtBeg(50)
 obj.insertionAtMid(60,20)
-obj.deleteLinkedList(60)
+obj.deleteLinkedList(50)
 obj.printLL()
