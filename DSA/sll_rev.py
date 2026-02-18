@@ -29,6 +29,18 @@ class SinglyLL:
         self.head = temp
 
 
+    def insertAtMid(self,value,x):
+        # x contains that node value after which we need to insert
+        temp = Node(value) # Node creation
+        t1 = self.head
+
+        while (t1.next != None):
+            if (t1.data == x):
+                temp.next = t1.next
+                t1.next = temp
+            t1 = t1.next
+
+
 
     def printLL(self):
         t1 = self.head
@@ -45,4 +57,5 @@ obj.insertAtEnd(40)
 obj.insertAtEnd(20)
 obj.insertAtEnd(60)
 obj.insertAtBegin(70)
+obj.insertAtMid(90,20)
 obj.printLL()
