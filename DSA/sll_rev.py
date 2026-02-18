@@ -11,7 +11,7 @@ class SinglyLL:
 
     # Insert at end
     def insertAtEnd(self,value):
-        temp = Node(30)
+        temp = Node(value)
         if (self.head != None):
             t1 = self.head
         
@@ -28,3 +28,9 @@ class SinglyLL:
         while(t1.next != None):
             print(t1.data)
             t1 = t1.next
+        print(t1.data)
+obj = SinglyLL()
+obj.insertAtEnd(40)
+obj.insertAtEnd(20)
+obj.insertAtEnd(60)
+obj.printLL()
