@@ -29,7 +29,7 @@ class DoublyLL:
     def printDLL(self):
         t = self.head
         while (t.next != None):
-            print(t.data)
+            print(t.data,end=" <--> ")
             t = t.next
         print(t.data)
 
