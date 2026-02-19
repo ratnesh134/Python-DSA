@@ -36,6 +36,22 @@ class DoublyLL:
             self.head.prev = temp
             self.head = temp
 
+    # Insertion in the middle
+    def insertionAtMid(self,value,x):
+        # x is the value/data after which we insert the node
+        temp = Node(value)
+        t = self.head
+        while(t.next != None):
+            if (t.data == x):
+                break
+
+            else:
+                t = t.next
+        temp.next = t.next
+        t.next.prev = temp
+        t.next = temp
+        temp.prev = t
+
 
     def printDLL(self):
         t = self.head
@@ -51,6 +67,7 @@ obj.insertionAtEnd(40)
 obj.insertionAtEnd(50)
 obj.insertionAtEnd(60)
 obj.insertionAtBeg(5)
+obj.insertionAtMid(100,50)
 obj.printDLL()
 
 
