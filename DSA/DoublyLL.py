@@ -41,6 +41,8 @@ class DoublyLL:
         # x is the value/data after which we insert the node
         temp = Node(value)
         t = self.head
+
+        # Element Search
         while(t.next != None):
             if (t.data == x):
                 break
@@ -51,6 +53,35 @@ class DoublyLL:
         t.next.prev = temp
         t.next = temp
         temp.prev = t
+
+
+    # Deletion of Node
+    def deletionOfNode(self,value):
+        t = self.head
+        if self.head == None:
+            print("Linked List is empty")
+            return
+        else:
+            t = self.head
+            # deletion at the beginning
+            if (self.head.data == value):
+                self.head = t.next
+                self.head.prev = None
+                return
+            
+            # deletion at the middle
+            while(t.next != None):
+                if (t.data == value):
+                    t.prev.next = t.next
+                    t.next.prev = t.prev
+                    return
+                else:
+                    t = t.next
+            # deletion at the end
+            if (t.data == value):
+                t.prev.next = None
+
+
 
 
     def printDLL(self):
@@ -68,6 +99,7 @@ obj.insertionAtEnd(50)
 obj.insertionAtEnd(60)
 obj.insertionAtBeg(5)
 obj.insertionAtMid(100,50)
+obj.deletionOfNode(40)
 obj.printDLL()
 
 
