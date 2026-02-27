@@ -12,6 +12,15 @@ class Stack:
     def push(self,value):
         self.ls.insert(0,value)
 
+    # to see the latest element
+    def peek(self):
+        if len(self.ls) == 0:
+            raise Exception("Empty Stack/List")
+        else:
+            return self.ls[0]
+    
+
+
 
 
     
