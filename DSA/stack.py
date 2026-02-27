@@ -27,8 +27,13 @@ class Stack:
             return self.ls.pop(0) # Need to specify the index since we are using the insert function instead of append
         
 
-    
-        
+
+stk = Stack()
+stk.push(10)
+stk.push(20)
+stk.push(40)
+print(stk.peek())
+print(stk.pop())
         
     
     
