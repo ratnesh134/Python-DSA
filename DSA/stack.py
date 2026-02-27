@@ -8,3 +8,10 @@ class Stack:
 
         return len(self.ls)
     
+    # to insert element into stack
+    def push(self,value):
+        self.ls.insert(0,value)
+
+
+
+    
