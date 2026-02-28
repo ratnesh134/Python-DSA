@@ -16,5 +16,14 @@ class Queue:
             print("Queue is empty")
         else:
             return self.items.pop(0)
-    
-    
+
+
+q = Queue()
+q.insertElement(10)
+q.insertElement(20) 
+q.insertElement(30)
+q.insertElement(40)  
+print(q.popElement())
+print(q.popElement())
+print(q.popElement())
+print(q.popElement())
