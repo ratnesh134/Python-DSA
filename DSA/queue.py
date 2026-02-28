@@ -7,5 +7,8 @@ class Queue:
     def isEmpty(self):
         return len(self.items) == 0
     
+    def insertElement(self,value):
+        return self.items.append(value)
+    
     
     
