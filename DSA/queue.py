@@ -11,6 +11,10 @@ class Queue:
         return self.items.append(value)
     
     def popElement(self):
-        return self.items.pop(0)
+
+        if self.isEmpty():
+            print("Queue is empty")
+        else:
+            return self.items.pop(0)
     
     
