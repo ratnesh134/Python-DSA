@@ -10,5 +10,7 @@ class Queue:
     def insertElement(self,value):
         return self.items.append(value)
     
+    def popElement(self):
+        return self.items.pop(0)
     
     
