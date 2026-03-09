@@ -19,4 +19,7 @@ class Deque:
     
     def insertAtBeg(self,value):
         self.items.insert(0,value)
-        
+    
+    def deleteAtRear(self):
+        self.items.pop()
+    
