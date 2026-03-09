@@ -6,7 +6,7 @@ class CircularQueue:
 
     # Insertion of element
     def enqueue(self,value):
-        if ((self.rear + 1)  == self.front):
+        if ((self.rear + 1)% self.size == self.front):
             print("Queue is full")
         
         # empty queue
@@ -32,6 +32,7 @@ class CircularQueue:
 
 cq = CircularQueue(5)
 cq.enqueue(10)
-cq.enqueue(10)
-cq.enqueue(10)
-cq.enqueue(10)
+cq.enqueue(20)
+cq.enqueue(30)
+cq.enqueue(40)
+cq.enqueue(50)
