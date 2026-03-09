@@ -16,3 +16,7 @@ class Deque:
             print("Queue is empty")
         else:
             return self.items.pop(0)
+    
+    def insertAtBeg(self,value):
+        self.items.insert(0,value)
+        
