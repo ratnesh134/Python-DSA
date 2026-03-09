@@ -18,4 +18,14 @@ class CircularQueue:
             self.rear = (self.rear + 1)% self.size
             self.items[self.rear] = value
         
-    
+    # Deletion of element
+    def dequeue(self):
+        if(self.front == -1):
+            print("Queue is empty")
+        elif self.front == self.rear:
+            print(self.items[self.front])
+            self.front = self.rear = -1
+        else:
+            print(self.items[self.front])
+            self.front = (self.front + 1)% self.size
+            
