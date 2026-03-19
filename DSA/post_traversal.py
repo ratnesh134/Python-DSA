@@ -8,11 +8,20 @@ class Node  :
     
 # Pre Order Traversal Logic 
 def postOrder(root):
-    if (root.left != None):
+    if (root != None):
         
+        postOrder(root.left)
         postOrder(root.right)
-        postOrder(root)
         print(root.data,end=" ")
+
+
+def inOrder(root):
+    if (root != None):
+        
+        inOrder(root.left)
+        print(root.data,end=" ")
+        inOrder(root.right)
+        
 
 
 
@@ -24,4 +33,6 @@ root.left.right = Node(4)
 root.right.right = Node(8)
 
 postOrder(root)
+print("\n")
+inOrder(root)
 print("\n")
