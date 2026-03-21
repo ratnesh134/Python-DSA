@@ -31,15 +31,15 @@ def insert(root,value):  # Here current Node is pointed to root
 def search(root,value):  # Here current Node is pointed to root
 
     if (root == None):
-        print("Element Not found")
-    
+        print("Element Not found",end="\n")
+        return
     if (root.data == value):
         print("Element found")
+        return
     
     if (root.data > value):
         search(root.left,value)
     else:
-        
         search(root.right,value)
     
 
@@ -61,3 +61,7 @@ root = insert(root,18)
 root = insert(root,50)
 
 inOrder(root)
+print("\n")
+
+search(root,18)
+search(root,100)
