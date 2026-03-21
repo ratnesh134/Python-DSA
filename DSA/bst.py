@@ -34,7 +34,7 @@ def search(root,value):  # Here current Node is pointed to root
         print("Element Not found",end="\n")
         return
     if (root.data == value):
-        print("Element found")
+        print("Element found",end="\n")
         return
     
     if (root.data > value):
